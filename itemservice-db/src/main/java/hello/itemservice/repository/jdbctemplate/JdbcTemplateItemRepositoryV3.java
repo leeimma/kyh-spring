@@ -94,7 +94,7 @@ public class JdbcTemplateItemRepositoryV3 implements ItemRepository {
 
         boolean andFlag = false;
         if (StringUtils.hasText(itemName)) {
-            sql += " item_name like concat('%',:item_name,'%')";
+            sql += " item_name like concat('%',:itemName,'%')";
             andFlag = true;
         }
 
